@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_6_PencilKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNu-cI-0Xm">
+                                <rect key="frame" x="354" y="64" width="50" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="NS6-WV-JjS"/>
+                                    <constraint firstAttribute="width" constant="50" id="b6o-Z3-f5Q"/>
+                                </constraints>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTapSaveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bFN-1z-8kE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiQ-Dl-jlf">
+                                <rect key="frame" x="354" y="124" width="50" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="1sJ-80-tLT"/>
+                                    <constraint firstAttribute="height" constant="20" id="GjY-ya-kaE"/>
+                                </constraints>
+                                <state key="normal" title="Undo">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTapUndoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fcG-Pw-mgP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H78-e2-vtK">
+                                <rect key="frame" x="354" y="154" width="50" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="64p-7r-3LK"/>
+                                    <constraint firstAttribute="height" constant="20" id="W1r-zE-dmT"/>
+                                </constraints>
+                                <state key="normal" title="Redo">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTapRedoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tRa-fR-Bbz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3k-xB-Lge">
+                                <rect key="frame" x="354" y="94" width="50" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="OUQ-Km-STn"/>
+                                    <constraint firstAttribute="height" constant="20" id="ifQ-p1-0aY"/>
+                                </constraints>
+                                <state key="normal" title="Clear">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTapClearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vNm-kP-0mN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H78-e2-vtK" secondAttribute="trailing" constant="10" id="DBX-HS-i2U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zNu-cI-0Xm" secondAttribute="trailing" constant="10" id="Htf-0s-HqU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qiQ-Dl-jlf" secondAttribute="trailing" constant="10" id="LC2-eA-eK1"/>
+                            <constraint firstItem="a3k-xB-Lge" firstAttribute="top" secondItem="zNu-cI-0Xm" secondAttribute="bottom" constant="10" id="amb-Nn-1cG"/>
+                            <constraint firstItem="H78-e2-vtK" firstAttribute="top" secondItem="qiQ-Dl-jlf" secondAttribute="bottom" constant="10" id="fLY-DJ-SiG"/>
+                            <constraint firstItem="zNu-cI-0Xm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="hYi-Xd-gIX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a3k-xB-Lge" secondAttribute="trailing" constant="10" id="puS-bV-emi"/>
+                            <constraint firstItem="qiQ-Dl-jlf" firstAttribute="top" secondItem="a3k-xB-Lge" secondAttribute="bottom" constant="10" id="rEm-sE-o4y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="clearButton" destination="a3k-xB-Lge" id="jRt-Iw-MPe"/>
+                        <outlet property="redoButton" destination="H78-e2-vtK" id="VZO-c8-PSM"/>
+                        <outlet property="saveButton" destination="zNu-cI-0Xm" id="oB0-rw-KQV"/>
+                        <outlet property="undoButton" destination="qiQ-Dl-jlf" id="ypm-17-Cn7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-145" y="70"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
