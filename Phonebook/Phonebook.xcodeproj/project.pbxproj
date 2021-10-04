@@ -16,7 +16,6 @@
 		036E99E326AF4AA0004D021D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 036E99E126AF4AA0004D021D /* LaunchScreen.storyboard */; };
 		036E99ED26AF4C56004D021D /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036E99EC26AF4C56004D021D /* CollectionViewCell.swift */; };
 		03B4AADA26C99CEF0022D7DF /* PasscodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B4AAD826C99CEF0022D7DF /* PasscodeViewController.swift */; };
-		03B4AADB26C99CEF0022D7DF /* PasscodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03B4AAD926C99CEF0022D7DF /* PasscodeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 		036E99E426AF4AA0004D021D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		036E99EC26AF4C56004D021D /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		03B4AAD826C99CEF0022D7DF /* PasscodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeViewController.swift; sourceTree = "<group>"; };
-		03B4AAD926C99CEF0022D7DF /* PasscodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasscodeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				03B4AAD826C99CEF0022D7DF /* PasscodeViewController.swift */,
-				03B4AAD926C99CEF0022D7DF /* PasscodeViewController.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -160,7 +157,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03B4AADB26C99CEF0022D7DF /* PasscodeViewController.xib in Resources */,
 				036E99E326AF4AA0004D021D /* LaunchScreen.storyboard in Resources */,
 				036E99E026AF4AA0004D021D /* Assets.xcassets in Resources */,
 				036E99DB26AF4AA0004D021D /* Main.storyboard in Resources */,

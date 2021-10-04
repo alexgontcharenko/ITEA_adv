@@ -37,9 +37,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneWillEnterForeground(_ scene: UIScene) {
-//        let passcodeVC = PasscodeViewController(nibName: "PasscodeViewController", bundle: nil)
-//                passcodeVC.modalPresentationStyle = .overFullScreen
-//                self.window?.rootViewController?.present(passcodeVC, animated: true, completion: nil)
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let passcodeVC = storyboard.instantiateViewController(identifier: "PasscodeViewController")
+        passcodeVC.modalPresentationStyle = .overFullScreen
+        self.window?.rootViewController?.present(passcodeVC, animated: true, completion: nil)
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {
